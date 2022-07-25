@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Attack">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="Воины бросаются в бой, чтобы разить мечом, молотом и когтями. Пронзительные боевые вопли и отчаянные
+крики эхом разносятся сквозь клубящийся дым, и с каждой минутой приближается апогей битвы." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фаза атаки разделена на два этапа. Сначала ваши
+отряды атакуют. Затем ваш противник совершает
+героическое наступление.
+1. АТАКА
+2. ГЕРОИЧЕСКОЕ НАСТУПЛЕНИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="1. АТАКА" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выберите отряд в вашей армии, чтобы им атаковать.
+Выполните атаку этим отрядом (см. ниже).
+Выберите следующий отряд в вашей армии, чтобы
+им атаковать.
+Когда все отряды завершат атаку, перейдите к этапу
+героического наступления (стр. 20)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="АТАКА ОТРЯДА" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Назначьте цель для атаки (в пределах 12 дюймов).
+Бросок на дальность атаки – 2D6 дюймов.
+Атака провалена, если результата не хватает, чтобы
+переместить атакующий отряд в зону поражения цели.
+Если атака успешна, модели совершают движение при атаке.
+Нельзя совершить движение при атаке в пределах зоны
+поражения отряда, не выбранного целью для атаки.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="2. ГЕРОИЧЕСКОЕ НАСТУПЛЕНИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выберите отряд с персонажем, чтобы совершить
+героическое наступление.
+Нельзя совершить героическое наступление, если в зоне
+поражения находятся вражеские отряды.
+Чтобы совершить героическое наступление, вражеский
+отряд должен быть в пределах 3 дюймов по горизонтали
+и 5 дюймов по вертикали.
+Выберите следующий отряд с персонажем, чтобы
+совершить героическое наступление.
+Когда все персонажи совершат героическое наступление,
+перейдите к фазе сражения (стр. 21)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="КАК ВЫПОЛНИТЬ ГЕРОИЧЕСКОЕ
+НАСТУПЛЕНИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Героическое наступление: движение на расстояние до
+3 дюймов.
+Нужно завершить ближе к ближайшей вражеской модели.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="АТАКА НА ЛАНДШАФТЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Модели свободно перемещаются по элементам
+ландшафта не выше 1 дюйма.
+Модели не могут перемещаться по высоким элементам
+ландшафта, но могут взбираться на них." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ПОЛЁТ ПРИ АТАКЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Модели, которые умеют летать, во время атаки
+перемещаются над моделями.
+Во время атаки модели, которые умеют летать,
+перемещаются по ландшафту (в том числе по
+зданиям) как обычные модели." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ДОЗОР" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дозор: перед броском на дальность атаки все цели
+могут вести огонь из дозора.
+Нельзя вести огонь из дозора, если в зоне поражения
+есть вражеские отряды.
+При огне из дозора попадание засчитывается при
+выпадении 6 (без модификатора). " />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

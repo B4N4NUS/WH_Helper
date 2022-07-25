@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Movement">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="Земля сотрясается от марша армий и рёва механизмов, которые продвигаются по полю битвы и занимают
+выгодные позиции." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="1. ПЕРЕДВИЖЕНИЯ
+ОТРЯДОВ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выберите отряд в вашей армии, чтобы переместить.
+Во время движения отряд может совершить обычное
+движение, наступление или остаться на месте.
+Отряды в зоне поражения вражеских моделей могут только
+отступить или остаться на месте.
+Выберите следующий отряд в вашей армии,
+чтобы переместить.
+Когда вы переместите все отряды, перейдите
+к подкреплениям (стр. 11)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ОБЫЧНОЕ ДВИЖЕНИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Обычное движение: модели перемещаются на
+расстояние Д дюймов.
+Нельзя двигаться в зоне поражения любой вражеской модели." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="НАСТУПЛЕНИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Наступление: модели перемещаются на расстояние
+Д+D6 дюймов.
+Нельзя двигаться в зоне поражения вражеских моделей.
+Во время наступления отряды не могут стрелять и атаковать." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ОСТАТЬСЯ НА МЕСТЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Если отряд остаётся на месте, до конца фазы нельзя
+передвигать ни одну модель в этом отряде. Любые отряды на
+поле битвы, которые вы не выбрали на этапе передвижения
+отрядов фазы перемещения, считаются оставшимися на месте." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ОТСТУПЛЕНИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Отступление: модели перемещаются на расстояние
+Д дюймов.
+Во время отступления модели не могут атаковать.
+Во время отступления отряды, кроме титанов, не могут
+стрелять и использовать психические силы." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="2. ПОДКРЕПЛЕНИЯ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Подкрепление: отряд, который начинает битву вне
+поля битвы.
+Установите подкрепления по очереди, как описано
+в правилах, позволяющих начинать битву вне поля битвы.
+Подкрепление не может совершать обычное движение,
+наступать, отступать или оставаться на месте
+в течение хода.
+Всегда считается, что подкрепление передвинулось
+в течение хода.
+Любое подкрепление, не установленное на поле до конца
+битвы, считается уничтоженным.
+После установки подкрепления перейдите к психической
+фазе (стр. 14)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ДВИЖЕНИЕ ПО ЛАНДШАФТУ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Модели свободно перемещаются по элементам
+ландшафта не выше 1 дюйма.
+Модели не могут перемещаться по высоким элементам
+ландшафта, но могут взбираться на них." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ПОЛЁТ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Модели с ключевым словом «Полёт» перемещаются
+над другими моделями во время обычного движения,
+наступления и отступления.
+Модели с ключевым словом «Полёт» игнорируют
+вертикальное перемещение во время обычного
+движения, наступления и отступления." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ТРАНСПОРТ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="У некоторых моделей есть ключевое слово «Транспорт». Следующие правила описывают, как отряды садятся в такие модели
+и выгружаются из них, а также как использовать модели для перемещения пассажиров по полю битвы." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="Вместимость транспорта" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Вместимость транспорта: максимальное число
+моделей, которое вмещается в транспорт.
+Отряды могут начать битву в транспорте." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ПОГРУЗКА" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Отряды могут погрузиться в дружественный транспорт,
+если все модели заканчивают обычное движение,
+наступление или отступление в пределах 3 дюймов
+от него.
+Отряд не может погрузиться в транспорт, который
+находится в зоне поражения вражеской модели.
+Отряд не может погрузиться в транспорт и выгрузиться
+из него в одну и ту же фазу.
+В транспорте отряды не могут ничего делать и на них
+нельзя влиять." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ВЫГРУЗКА " />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Отряды, начавшие фазу перемещения в транспорте,
+могут выгрузиться в этой фазе.
+Отряд должен выгрузиться до движения транспорта.
+Выгруженный отряд устанавливается полностью
+в пределах 3 дюймов от транспорта и вне зоны
+поражения вражеской модели.
+Если отряд выгрузился, считается, что в этот ход он
+совершил движение." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="УНИЧТОЖЕННЫЙ ТРАНСПОРТ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Если транспорт уничтожен, примените его способность
+взрываться (если есть).
+В этом случае все загруженные отряды должны
+выгрузиться.
+Бросьте один D6 за каждую выгруженную модель.
+За каждое выпадение 1 одна модель уничтожается.
+В течение хода отряды, которые выгрузились, не могут
+атаковать и совершать героическое наступление." />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

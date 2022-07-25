@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Missions">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ИНСТРУКЦИИ К МИССИЯМ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Ко всем миссиям прилагается набор инструкций, описывающих
+происходящую битву. Они указаны в определённом порядке и обычно
+включают следующие этапы: " />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="1. Создание армии" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="В каждой миссии указано, какого размера армию должен собрать игрок,
+а также может иметься набор правил, влияющий на выбор той или
+иной армии.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="2. Чтение описания миссии" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="У каждой миссии есть описание обстоятельств возникновения битвы
+и указаны её приоритетные цели (поясняющие, что необходимо сделать
+для достижения победы). Также некоторые миссии могут включать одно
+особое правило или несколько. Такие правила относятся к необычным
+ситуациям или способностям, используемым на поле битвы.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="3. Создание поля битвы" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="В каждой миссии указано, какого размера поле битвы вам понадобится.
+Также там уточняется, какие элементы ландшафта или метки цели
+необходимо расставить и где. В противном случае считается, что при
+создании поля битвы вы придерживались указаний из Основной книги
+Warhammer 40 000. Если вы используете поле битвы иного размера
+или формы, вам необходимо должным образом скорректировать
+расположение зон расстановки, меток целей и элементов ландшафта,
+а также расстояние между ними." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="4. Расстановка сил" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Каждая миссия имеет карту расстановки, которая указывает, где
+игроки могут выставлять модели из своей армии (это называется зоной
+расстановки армии), и перечень ограничений на расстановку." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="5. Определение первого хода" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="В каждой миссии поясняется, как определить того, кто будет
+ходить первым." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="6. Применение правил перед битвой" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Теперь игроки должны применить любые правила (если имеются),
+действующие перед битвой." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="7. Начало битвы" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Начинается первый раунд битвы. Игроки продолжают проводить
+раунды до окончания битвы." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="8. Окончание битвы" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="В каждой миссии указаны условия окончания битвы. Обычно битва
+заканчивается по истечении указанного числа раундов битвы или по
+достижении одним из игроков определённого условия победы.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="9. Определение победителя" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="В каждой миссии указано, что вам необходимо сделать для
+победы в игре. Если ни один игрок не смог добиться победы,
+засчитывается ничья.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="МЕТКИ ЦЕЛЕЙ " />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="Метка цели: круглая метка диаметром 40 мм
+Модель находится в пределах дальности метки цели, когда расположена
+в пределах 3 дюймов по горизонтали и 5 дюймов по вертикали от неё.
+Метку цели контролирует игрок, у которого в пределах её дальности
+расположено больше моделей.
+ Самолёты и укрепления не могут контролировать метки цели." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="ЗАЩИЩЁННАЯ ЦЕЛЬ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="Защищённая цель: игрок контролирует метку цели, если в пределах её
+дальности расположена его модель с этой способностью." />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Psycker">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="Боевые мистики и маги обладают странной силой варпа, которую они используют в помощь союзникам
+или во вред врагам. Однако эту силу трудно приручить, и малейшая ошибка может обернуться гибелью для
+всех, кто находится поблизости." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выберите псайкера в вашей армии, чтобы обуздать
+психическую силу.
+Выберите следующего псайкера в вашей армии, чтобы
+обуздать психическую силу.
+Когда все псайкеры обуздали психические силы, перейдите
+к фазе стрельбы (стр. 15)
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ПСИХИЧЕСКИЕ СПОСОБНОСТИ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Все псайкеры имеют способность «Удар».
+ Псайкеры обладают дополнительными силами, описанными
+в таблицах." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ОБУЗДАНИЕ ПСИХИЧЕСКИХ СИЛ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Выберите психическую силу.
+Нельзя выбрать одну силу несколько раз за раунд битвы.
+Это правило не действует на способность «Удар».
+Постарайтесь обуздать силу, пройдя психо-тест.
+Противник может помешать вашей силе, пройдя проверку
+«Отринуть ведьмовство».
+Если вы успешно обуздали силу, примените её эффекты.
+Выберите следующую психическую силу" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ПСИХО-ТЕСТЫ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Психо-тест: пройдён успешно, если результат броска 2D6
+больше или равен варп-заряду силы.
+Если выпадает две 1 или две 6, псайкер подвергается
+Опасностям варпа." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="ОТРИНУТЬ ВЕДЬМОВСТВО" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Отринуть ведьмовство: успех, если результат броска
+2D6 больше результата психо-теста псайкера.
+Вам доступна только одна попытка помешать каждой
+психической силе." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:text="УДАР " />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Значение варп-заряда «Удара» равно 5. Добавьте 1
+к значению варп-заряда этой психической силы за
+каждую попытку обуздать силу, которую предпринял
+отряд вашей армии в этой фазе, независимо от успеха
+попытки. При успешном использовании ближайший
+вражеский отряд в 18 дюймах от псайкера получает D3
+смертельных ран (стр. 19). Если результат психо-теста не
+менее 11, цель получает D6 смертельных ран." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:text="ОПАСНОСТИ ВАРПА " />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Когда псайкер подвергается Опасностям варпа, он получает
+D3 смертельных ран. Если во время обуздания силы
+псайкер погибает от Опасностей варпа, сила автоматически
+считается необузданной. Если отряд псайкеров погибает от
+Опасностей варпа, перед тем как последняя модель этого
+отряда исчезнет с поля битвы, все отряды в пределах 6
+дюймов мгновенно получают D3 смертельных ран." />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

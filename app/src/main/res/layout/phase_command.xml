@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Command">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:text="Командиры оценивают ход битвы, сверяются со своими целями, прежде чем поменять план битвы
+и разработать новую тактику и стратегию, чтобы уничтожить врага. " />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Если ваша армия закалена в боях, в фазе командования вы
+получаете 1 очко командования (ОК) до совершения любых
+действий. Это бонус ОК для закалённых в боях. Больше
+сведений о закалённых в боях армиях и очках командования
+вы найдёте в Основной книге Warhammer 40 000.
+В фазу командования используются некоторые стратагемы
+и способности из таблиц. Кроме того, в некоторых миссиях
+есть правила, действующие в фазу командования. Когда
+вы и противник применили все правила (если они есть),
+перейдите к фазе перемещения. Больше сведений о стратагемах
+вы найдёте в Основной книге Warhammer 40 000." />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

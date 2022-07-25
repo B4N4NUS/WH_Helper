@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Morale">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="Даже храбрецы могут дрогнуть, когда на поле битвы царит ужас. Когда опасность давит со всех сторон
+и соратники гибнут один за другим, выстоят только герои, монстры или безнадёжные безумцы." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фаза морали разделена на два этапа. Сперва отряды
+проходят проверку морали. Затем вы убираете модели,
+у которых нет слаженности.
+1. ПРОВЕРКА МОРАЛИ
+2. ПРОВЕРКА СЛАЖЕННОСТИ ОТРЯДА" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="1. ПРОВЕРКА МОРАЛИ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Игроки проходят проверку морали за каждый отряд,
+который понёс потери в течение хода.
+Если у игрока не осталось отрядов для проверки морали,
+противник проходит проверку оставшихся отрядов (по
+одному за раз).
+После того как все отряды прошли проверку морали, переходите
+к проверке слаженности (см. следующую страницу)." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="ПРОВЕРКА МОРАЛИ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Проверка морали – D6 + количество уничтоженных
+в течение хода моделей.
+Результат 1 при броске без модификаторов всегда
+считается успешным (модели не дезертируют).
+Если результат проверки морали превышает Лд отряда,
+одна модель дезертирует, остальные проходят проверку
+боевых потерь.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="ПРОВЕРКА БОЕВЫХ ПОТЕРЬ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Проверка боевых потерь: бросьте один D6 за каждую
+оставшуюся модель. За каждое выпадение 1 одна
+модель дезертирует.
+Отнимите 1 от результата проверки боевых потерь, если у
+отряда меньше половины силы." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="2. ПРОВЕРКА
+СЛАЖЕННОСТИ ОТРЯДА" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Уберите модели, у которых нет слаженности (стр. 4).
+Когда убраны все модели, у которых нет слаженности,
+фаза морали заканчивается.
+Ход игрока заканчивается. Если битва не завершилась,
+наступает ход второго игрока (стр. 9)." />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shooting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:text="Орудия гремят, и осколки падают с неба. Вспышки очередей разрывают сумрак, лазерные лучи освещают
+туман войны, а пустые гильзы усыпают поле битвы." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выберите отряд в вашей армии, чтобы выстрелить.
+При стрельбе выберите цели и выстрелите из одного или
+всех оружий, которые есть у моделей в отряде.
+Выберите следующий отряд в вашей армии,
+чтобы выстрелить.
+Когда все отряды выстрелили, перейдите к фазе атаки
+(стр. 19)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ВЫБОР ЦЕЛЕЙ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выберите цели для всего оружия, прежде чем выстрелить.
+Хотя бы одна модель из атакованного отряда должна быть
+видна атакующей модели и должна находиться в пределах
+дальности оружия.
+Если отряд целится в несколько вражеских отрядов,
+сначала нужно совершить все выстрелы в один отряд,
+затем перейти к следующему.
+Если отряд стреляет из нескольких видов оружия, сначала
+нужно выстрелить из оружия одного профиля, затем
+перейти к следующему оружию." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="СХВАТКА" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Модели не могут атаковать оружием дальнего боя, если отряд
+находится в зоне поражения вражеской модели (стр. 4). Модели
+не могут целиться во вражеские отряды, которые находятся
+в зоне поражения ваших отрядов. Слишком велик риск попасть
+по соратникам." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="КОЛИЧЕСТВО АТАК" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Все выстрелы одного оружия должны быть сделаны по
+одному атакованному отряду.
+Количество выстрелов – число, указанное после
+типа оружия." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="БОЛЬШИЕ ПУШКИ НЕ ЗНАЮТ УСТАЛИ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Монстры и транспорт не могут использовать оружие
+дальнего боя, даже находясь в зоне поражения
+вражеских отрядов.
+ Монстры и транспорт могут целиться в другие отряды,
+но не могут стрелять, пока вражеские модели
+находятся в зоне поражения.
+Отнимите 1 от результата броска на попадание,
+если монстры и транспорт используют тяжёлое
+оружие против вражеского отряда в пределах
+зоны поражения." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="БЕРЕГИТЕСЬ, СЭР" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Нельзя стрелять в персонажа с показателем ран,
+не превышающим 9, если он находится в пределах
+3 дюймов от дружественного отряда (монстра,
+транспорта или отряда, в котором не менее 3
+моделей). Исключение – это ближайшая цель." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ТИПЫ ОРУЖИЯ ДАЛЬНЕГО БОЯ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Существует пять типов оружия: пехотное, тяжёлое, скорострельное, гранаты и пистолеты. Тип оружия влияет на количество
+доступных выстрелов (стр. 17). Кроме того, у каждого типа оружия есть дополнительное правило, которое определяет точность
+и возможность стрельбы в зависимости от ситуации. Типы оружия:" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="ПЕХОТНОЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Можно стрелять, даже если отряд модели совершил
+наступление.
+Отнимите 1 от результата броска на попадание, если отряд
+модели совершил наступление." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="ТЯЖЁЛОЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Отнимите 1 от результата броска на попадание, если
+стреляет пехота и отряд переместился в этот ход.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="СКОРОСТРЕЛЬНОЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Удвойте количество выстрелов, если цель находится в
+пределах половины дальности стрельбы.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="ГРАНАТЫ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Только одна модель может бросить гранату, когда её
+отряд стреляет" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="ПИСТОЛЕТЫ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Можно стрелять, даже если отряд модели находится в зоне
+поражения вражеского отряда.
+Нельзя использовать вместе с оружием другого типа." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="РАЗРЫВНОЕ ОРУЖИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Разрывное оружие: минимум 3 атаки против отрядов,
+в которых не менее 6 моделей. Максимальное количество
+атак против отрядов, в которых не менее 11 моделей.
+Нельзя использовать против отрядов в зоне поражения
+стреляющего отряда." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="СОВЕРШЕНИЕ АТАК" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Атаки совершаются с помощью оружия дальнего или ближнего боя. Атаки совершаются по одной за раз. В некоторых случаях вы
+бросаете кубик для нескольких атак одновременно. Используйте следующую последовательность при одной атаке:" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="1. БРОСОК НА ПОПАДАНИЕ (БЛИЖНИЙ БОЙ)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="бросьте D6.
+Засчитайте попадание, если результат больше или равен ББ
+атакующей модели. В противном случае засчитайте промах.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="1. БРОСОК НА ПОПАДАНИЕ (ДАЛЬНИЙ БОЙ)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="бросьте D6.
+Засчитайте попадание, если результат больше или равен НС
+атакующей модели. В противном случае засчитайте промах.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="2. БРОСОК НА РАНЕНИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="бросьте D6 и сравните С атаки и Ст цели по
+таблице слева. Цель получает рану, если результат больше или
+равен нужному значению. В противном случае засчитайте промах." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="3. РАСПРЕДЕЛЕНИЕ АТАКИ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="игрок, контролирующий цель, выбирает
+модель в отряде. Если модель уже получила раны или на неё
+распределяли атаки в этой фазе, тогда нужно выбрать её.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="4. СПАС-БРОСОК" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="бросьте D6 и используйте модификатор Б. Если
+результат меньше З выбранной модели, спас-бросок считается
+проваленным и модель получает урон. В противном случае спасбросок успешен." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="5. НАНЕСЕНИЕ УРОНА" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="выбранная модель получает раны, количество
+которых равно У атаки." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="Дополнительно" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:text="Если атаки уничтожают модель, оставшийся урон исчезает.
+Результат 1 для бросков на попадание, ранение и спас-броска без
+модификаторов считается провалом.
+Результат 6 для бросков на попадание и ранение без
+модификаторов считается успешным.
+Бросок на попадание и ранение нельзя модифицировать более
+чем на -1 и +1." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="НЕУЯЗВИМАЯ ЗАЩИТА" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Неуязвимая защита: спас-бросок, который не
+модифицируется показателем Б оружия.
+Модель может использовать неуязвимую защиту
+вместо обычной." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="СМЕРТЕЛЬНЫЕ РАНЫ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Смертельная рана отнимает одну рану от показателя
+модели в атакованном отряде.
+Спас-броски не действуют против смертельных ран.
+Смертельные раны всегда распределяются на цель,
+даже если модель защитилась от обычных атак.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ИГНОРИРОВАНИЕ РАН" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Модель может использовать только одно правило,
+позволяющее игнорировать полученную рану." />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

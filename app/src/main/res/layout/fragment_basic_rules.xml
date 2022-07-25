@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Basic">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ОТРЯДЫ" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Модели передвигаются и сражаются, объединяясь в отряды. В отряде может быть одна или несколько моделей из одной таблицы. Отряды и модели одной армии считаются дружественными. Отряды и модели противника считаются вражескими. Если в правиле описаны отряды и модели без указания, дружественные ли они или вражеские, значит, речь идёт обо всех отрядах и моделях, независимо от их армии." />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="СЛАЖЕННОСТЬ ОТРЯДА" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отряд, в котором состоит больше одной модели, должен действовать и передвигаться единой группой. Все модели должны находиться в пределах 2 дюймов по горизонтали и 5 дюймов по вертикали хотя бы от одной другой модели этого отряда. Если в отряде не менее 6 моделей, все модели должны находиться в пределах 2 дюймов по горизонтали и 5 дюймов по вертикали хотя бы от двух других моделей этого отряда. Такое построение называет слаженностью отряда. Если отряд не может завершить движение слаженно, то это действие нельзя выполнить. Как правило, отряды передвигаются в фазу перемещения (стр. 10). Их также можно передвигать в фазу атаки (стр. 19) и сражения (стр. 21). Некоторые правила разрешают добавлять модели в отряд во время битвы. Такие модели нужно выставлять с учётом слаженности отряда. Иногда моделям из отряда не будет хватать места или невозможно будет выставить модели с учётом слаженности отряда. В таком случае модели, которые нельзя выставить, считаются уничтоженными. " />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ЗОНА ПОРАЖЕНИЯ" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Зона поражения – это область, на которой модели представляют угрозу своим врагам. Если модель находится в пределах 1 дюйма по горизонтали и 5 дюймов по вертикали от врага, эти модели находятся в зоне поражения друг друга. Если две модели находятся в пределах зоны поражения друг друга, их отряды также находятся в зонах поражения друг друга. Модели нельзя выставлять в пределах зоны поражения." />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ПОЛЕ БИТВЫ" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Все битвы Warhammer 40 000 проходят на прямоугольном поле боя. Подходит любая поверхность, на которую можно выставить модели, например стол или пол. Миссия подскажет необходимый размер поля битвы. Оно будет соответствовать размеру ваших армий. На поле битвы располагаются элементы ландшафта." />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ЭЛЕМЕНТЫ ЛАНДШАФТА" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Пейзаж поля битвы может быть представлен моделями из ассортимента Warhammer 40 000. Такие модели называются элементами ландшафта, чтобы вы не путали их с моделями, составляющими армию. Элементы ландшафта устанавливаются на поле перед началом битвы. Больше сведений об элементах ландшафта вы найдёте в Основной книге Warhammer 40 000. Если в миссии не указано иное, создавайте собственное поле битвы с помощью имеющихся элементов ландшафта. Рекомендация: один элемент на область площадью 12 на 12 дюймов (с округлением в большую сторону). Не волнуйтесь, если ваше поле битвы не соответствует этой рекомендации. Помните, что пустующее или, наоборот, переполненное элементами поле может дать преимущество той или иной стороне." />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ИЗМЕРЕНИЕ РАССТОЯНИЙ " />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Расстояния измеряются в дюймах («) между ближайшими точками подставок моделей. Если у модели нет подставки (в основном её нет у транспорта), измерьте расстояние до ближайшей точки любой части модели. Это называется измерением до корпуса модели. Вы можете измерять расстояния когда угодно. Если правило действует на ближайший отряд или модель и расстояние до нескольких моделей одинаково, тогда игрок, который управляет отрядом, использующим это правило, выбирает ближайший отряд для использования этого правила" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="В ПРЕДЕЛАХ И ПОЛНОСТЬЮ В ПРЕДЕЛАХ" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Если правило применяется в пределах определённого расстояния, оно действует на любое расстояние, не превышающее указанное. Например, «в пределах 1 дюйма» значит любое расстояние не более 1 дюйма. Если правило применяется на модель в пределах, тогда оно действует, если любая часть подставки (или корпуса) модели находится в пределах указанного расстояния. Если правило применяется на модель полностью в пределах, тогда оно действует, если все части подставки (или корпуса) модели находятся в пределах указанного расстояния. Если правило применяется на отряд в пределах, тогда оно действует, если любая часть подставки (или корпуса) любой модели в этом отряде находится в пределах указанного расстояния. Если правило применяется на отряд, в котором все модели находятся в пределах, тогда оно действует, если любая часть подставки (или корпуса) всех моделей находится в пределах указанного расстояния. Если правило применяется на отряд полностью в пределах, тогда оно действует, если все части подставки (или корпуса) всех моделей в этом отряде находятся в пределах указанного расстояния. " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="КУБИКИ" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Чтобы сражаться в битве, вам потребуются шестигранные кубики (часто обозначаются как D6). В некоторых правилах упоминаются 2D6, 3D6 и так далее – в таких случаях нужно бросить указанное число кубиков D6 и сложить результаты. Если правило требует броска D3, бросьте кубик D6, разделите результат пополам и округлите его в большую сторону. Если правило требует определённый результат броска D6, например 3 или более, это часто сокращается как 3+. Все модификаторы (если они есть) суммируются к результату. Сначала применяется деление, затем умножение; также сначала применяется сложение, затем вычитание. После применения модификаторов округлите результат в большую сторону. С помощью модификатора можно повысить максимальный результат кубика (например, показатель D6 может превысить 6), но нельзя получить меньше 1. Если после всех модификаторов результат будет меньше 1, посчитайте его за 1." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ПЕРЕБРОСЫ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Некоторые правила позволяют перебрасывать кубик, что означает,
+что вы снова можете бросить некоторые или все кубики. Если правило
+разрешает переброс броска, сделанного несколькими кубиками (2D6,
+3D6 и т. д.), нужно перебросить все кубики, если не указано иное.
+Если переброс разрешён для определённого результата, перебросьте
+кубики только с указанным результатом. Если переброс разрешён для
+определённого результата, но результат рассчитан для D6 (например, вы
+бросаете D3), используйте разделённый надвое результат, а не результат
+D6, чтобы определить, возможен ли переброс. Например, если правило
+разрешает переброс при 1, а вы бросаете D3, то вы можете перебросить,
+если на D6 выпадет 1 или 2 (2 делится надвое, чтобы получить 1 для D3).
+Переброс можно выполнить только один раз до использования любых
+модификаторов. Правила, в которых указан бросок без модификатора,
+описывают результат броска после переброса, но до использования
+любых модификаторов." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ВСТРЕЧНЫЕ БРОСКИ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="По некоторым правилам игроки должны совершать встречные
+броски. Для этого оба игрока должны бросить D6. Игрок
+с наибольшим результатом выигрывает встречный бросок.
+В случае равного счета нужно повторно совершить встречные
+броски. Во время встр" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ОЧЕРЁДНОСТЬ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Играя в Warhammer 40 000, вы заметите, что два или несколько
+правил действуют одновременно, например «в начале раунда
+битвы» и «в конце фазы сражения». В этом случае игрок,
+которому принадлежит ход, определяет порядок. Если такое
+происходит до или после битвы, в начале или в конце раунда
+битвы, игроки совершают встречный бросок и победитель
+решает, в каком порядке применяются правила." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="НАЧАЛЬНАЯ СИЛА, ПОЛОВИНА СИЛЫ
+И УНИЧТОЖЕННЫЕ ОТРЯДЫ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начальная сила – это число моделей в отряде, когда вы
+добавляете его в армию. В битве моделям наносят урон
+и их уничтожают. Если модель уничтожена, её убирают
+из игры. Если число моделей в отряде меньше половины
+начальной силы, у этого отряда есть меньше половины
+силы. Если все модели в отряде уничтожены, весь отряд
+считается уничтоженным.
+Если во время битвы правило разделяет отряд на
+несколько отрядов, начальная сила каждого отряда
+становится равной числу моделей в этом отряде. Если во
+время битвы несколько отрядов объединяются в один,
+сложите начальную силу отдельных отрядов, чтобы
+определить новую начальную силу объединённого
+отряда. Используйте это значение, чтобы определить,
+есть ли у объединённого отряда меньше половины силы.
+Некоторые правила применяются, если вы, ваша модель
+или отряд из вашей армии уничтожает врага. То есть
+последняя модель из вражеского отряда уничтожена
+атакой (стр. 18) вашей модели; дезертировала с поля
+битвы (стр. 23); уничтожена смертельной раной (стр.
+19), вызванной правилом, которое использовала ваша
+модель; уничтожена в результате любого другого правила,
+которое использовала ваша модель и в котором явно
+указано уничтожение вражеской модели. Вражеский
+отряд, уничтоженный другим способом, не считается
+уничтоженным вашим отрядом или моделью." />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

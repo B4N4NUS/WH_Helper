@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Combat">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="На поле битвы начинается резня, когда враждующие армии сходятся лицом к лицу. Клыки и когти с хрустом
+ломают кости. Клинки звенят словно удары молота по наковальне. Исполненные ненависти противники рвут
+друг друга, проливая кровь и разрывая плоть." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начиная с противника, по очереди выбирайте отряды
+для сражения.
+Когда отряд сражается, он сначала вступает в бой, потом
+атакует в рукопашном бою и, наконец, закрепляет позиции.
+Если у игрока не осталось отрядов для сражения,
+противник сражается оставшимися отрядами (по одному
+за раз).
+Когда все отряды сразятся, перейдите к фазе морали
+(стр. 23)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="АТАКУЮЩИЕ ОТРЯДЫ СРАЖАЮТСЯ ПЕРВЫМИ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отряды, которые совершили движение при атаке в этот
+ход, сражаются первыми." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="СРАЖЕНИЕ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Когда вы выбираете отряд, сначала он вступает в бой, затем атакует
+в рукопашном бою и, наконец, закрепляет позиции." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="ВСТУПЛЕНИЕ В БОЙ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Вступление в бой: движение на расстояние до 3 дюймов.
+Нужно завершить ближе к ближайшей вражеской модели.
+" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="АТАКИ В РУКОПАШНОМ БОЮ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Когда отряд сражается в рукопашном бою, но до выполнения атаки
+определите, какие модели будут сражаться и сколько ударов они нанесут.
+Затем выберите отряд(-ы) для всех атак и оружие ближнего боя" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="Какие модели сражаются" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Модель может сражаться в зоне поражения вражеского
+отряда.
+Модель может сражаться, если она находится в пределах
+½ дюйма от модели своего отряда, который в свою
+очередь находится в ½ дюйма от врага" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:text="Количество атак" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Количество атак каждой модели – показатель А. " />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="Выбор целей" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Если в течение хода атакующий отряд совершил движение
+при атаке, его модели могут целиться только в те
+отряды, против которых они объявили атаку или которые
+совершили героическое наступление в течение хода.
+Выберите цели для всех атак, прежде чем атаковать.
+Если отряд целится в несколько вражеских отрядов,
+сначала нужно совершить все выстрелы в один отряд,
+затем перейти к следующему." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="Выбор оружия" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="В рукопашном бою используется оружие ближнего боя.
+Модель атакует, используя профиль оружия для
+рукопашного боя, если у неё нет другого оружия
+рукопашного боя.
+Если отряд атакует несколькими видами оружия, сначала
+нужно атаковать оружием одного профиля, затем перейти
+к следующему оружию." />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="ЗАКРЕПЛЕНИЕ ПОЗИЦИЙ" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Закрепление позиций: движение на расстояние до
+3 дюймов.
+Нужно завершить ближе к ближайшей вражеской модели." />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
